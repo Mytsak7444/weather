@@ -1,9 +1,19 @@
+import { weatherIcons } from "./icons";
+
 export interface IData {
   temp: number;
   humidity: number;
   name: string;
   speed: number;
-  weather: string;
+  weather: keyof typeof weatherIcons;
+}
+
+export interface IWeatherIcons {
+  Clouds: string;
+  Clear: string;
+  Rain: string;
+  Drizzle: string;
+  Default: string;
 }
 
 export interface IFetchedData {
@@ -17,7 +27,7 @@ export interface IFetchedData {
   };
   weather: [
     {
-      main: string;
+      main: keyof typeof weatherIcons;
     }
   ];
 }

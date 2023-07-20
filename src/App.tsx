@@ -14,7 +14,7 @@ function App() {
     humidity: 0,
     name: "",
     speed: 0,
-    weather: "",
+    weather: "Default",
   });
 
   const iconUrl = weatherIcons[data.weather] || weatherIcons.Default;

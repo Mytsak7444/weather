@@ -1,4 +1,6 @@
-export const weatherIcons = {
+import { IWeatherIcons } from "./interface";
+
+export const weatherIcons: IWeatherIcons = {
   Clouds: "https://cdn-icons-png.flaticon.com/512/252/252035.png",
   Clear:
     "https://cdn1.iconfinder.com/data/icons/weather-forecast-meteorology-color-1/128/weather-sunny-512.png",
